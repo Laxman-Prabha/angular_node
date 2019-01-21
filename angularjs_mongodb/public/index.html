@@ -1,0 +1,29 @@
+<!doctype html>
+<html >
+
+<head>
+    <title>Intro to Node and MongoDB</title>
+            
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>   -->
+    
+    <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js" ></script>
+    <script type="text/javascript" src="./app.js"></script>
+                                                               
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body center ng-controller="firstController" ng-app="App">
+    <h1 align="center">SEND MESSAGE</h1>
+    <form >
+        <center>
+        <label>Enter contact name:</label>
+        <input type="text" name="Name" ng-model="person.name" placeholder="Enter  name..." required><br><br>
+        <label>Message:<textarea name="Message" id ="msg" ng-model="person.msg" required></textarea></label>
+       <button type="submit"  data-ng-click="add();" >ADD</button>
+    </center>
+    </form>
+    
+</body>
+
+</html>
